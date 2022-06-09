@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A complete website with navigation</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h2><a href="#">Awesome Books</a></h2>
+      <ul class="link">
+        <li><a id="list">List</a></li>
+        <li><a id="add-new">Add new</a></li>
+        <li><a id="info-contact">Contact</a></li>
+      </ul>
+    </nav>
+    <span id="date"></span>
+  </header>
+
+  <section class="main">
+    <section id="page1" class="display">
+        <h1>All awesome books</h1>
+        <div class="books"></div>
+    </section><br>
+
+    <form id="page2" method="post">
+      <h2>Add a new book</h2>
+      <input type="text" id="title" name="title" placeholder="Title" required><br><br>
+      <input type="text" id="author" name="author" placeholder="Author" required><br><br>
+      <input type="submit" class="done" value="Add" id="submit">
+    </form>
+
+    <section id="page3" class="contact">
+      <div>
+        <h2>Contact information</h2>
+        <p>Do you have any questions or you just want to say "hello"? You can reach out to us!</p>
+        <ul>
+          <li>e-mail: farida@gmail.com</li>
+          <li>Phone number: 000-000-0000</li>
+          <li>Address: Thirty rocks from the Sun</li>
+        </ul>
+      </div>
+    </section>
+  </section>
+
+  <footer>
+    <div class="copyright">
+      <small>Copyright: Created by Farida Hamid</small>
+    </div>
+  </footer>
+
+  <script type="module" src="index.js"></script>
+  <script type="module" src="./modules/content.js"></script>
+
+</body>
+</html>
