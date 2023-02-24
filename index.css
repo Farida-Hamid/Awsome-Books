@@ -1,0 +1,121 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  border: 1px solid gray;
+  height: 40px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar li {
+  display: flex;
+  align-items: center;
+}
+
+.navbar li:not(:last-child)::after {
+  content: "";
+  display: block;
+  min-width: 2px;
+  height: 24px;
+  margin: 0 20px;
+  border-radius: 1px;
+  background-color: rgb(43, 100, 243);
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+}
+
+.link.link--active {
+  color: rgb(45, 100, 243);
+}
+
+.contact {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.contact ul li {
+  margin-top: 5px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+}
+
+footer .copyright {
+  padding: 12px 24px;
+  font-size: 25px;
+  border: 1px solid black;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.copyright small {
+  text-align: center;
+  display: block;
+}
+
+.books {
+  border: 2px solid rgb(22, 22, 22);
+  padding: 2%;
+  margin: auto;
+}
+
+tr {
+  display: flex;
+}
+
+.cancel {
+  margin-left: auto;
+}
+
+form {
+  width: fit-content;
+  margin: auto;
+}
+
+.done {
+  margin-left: 110px;
+}
+
+.main {
+  width: 70%;
+}
+
+#date {
+  text-align: right;
+  margin: 1%;
+  width: 87%;
+}
